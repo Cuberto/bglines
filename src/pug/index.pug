@@ -1,0 +1,52 @@
+extends /_includes/layout
+
+block title
+    title Cuberto Background Lines | Demo
+
+block content
+
+    canvas.cb-lines
+    .cb-layout#view-main
+        .cb-content
+
+            header.cb-demo
+                .cb-demo-content
+                    .cb-demo-container
+                        .cb-demo-header
+                            h1 Cuberto#[br] Background#[br] Lines
+                            //h2 With GSAP ScrollTrigger & SmoothScroll
+
+            header.cb-brief
+                .cb-brief-content
+                    .cb-brief-container
+                        .cb-brief-header
+                            h2 Usage
+                        .cb-brief-text
+                            p Import &laquo;Lines&raquo; (/src/js/lines.js) class into your project.
+                        .cb-brief-code
+                            pre.
+                                const lines = new Lines(canvas, {
+                                    color: [0.72, 0.76, 0.9, 1], // color RGBA%
+                                    position: 0, // x position from -1 to 1
+                                    speed: 0.7, // speed
+                                    lines: 20, // lines count
+                                    density: 1, // lines density
+                                    scale: 15, // stage scale
+                                    segments: 2, // curve segments
+                                    intensity: 10 // bend intensity
+                                });
+
+            section.cb-outro
+                .cb-outro-bg
+                    img
+                .cb-outro-mask
+                .cb-outro-content
+                    .cb-outro-container
+                        .cb-outro-header
+                            h2 Credits
+                        .cb-outro-list
+                            .cb-outro-list-item: a(href="//cuberto.com/", target="_blank") Cuberto
+                            .cb-outro-list-item: a(href="//clovr.cuberto.com/", target="_blank") Cuberto Clovr
+                            .cb-outro-list-item: a(href="//greensock.com/gsap/", target="_blank") GreenSock GSAP
+                            .cb-outro-list-item: a(href="//github.com/idiotWu/smooth-scrollbar", target="_blank") Smooth Scrollbar
+                            .cb-outro-list-item: a(href="//threejs.org/", target="_blank") Three.js

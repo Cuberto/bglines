@@ -1,0 +1,67 @@
+.cb-brief {
+    $root:&;
+
+    &-content {
+        padding:80px 0;
+        display:flex;
+        align-items:center;
+        //justify-content:center;
+        height:100vh;
+    }
+
+    &-container {
+        flex:1;
+        width:100%;
+        padding:0 40px;
+
+        @media (min-width:$screen-md-min) {
+            padding:0 120px;
+        }
+
+        @media (min-width:$screen-lg-min) {
+            padding:0 180px;
+        }
+    }
+
+    &-header {
+        color:#2380FA;
+
+        h2 {
+            font-size:20px;
+            font-weight:bold;
+            line-height:120%;
+
+            @media (min-width:$screen-md-min) {
+                font-size:40px;
+            }
+
+            @media (min-width:$screen-lg-min) {
+                font-size:60px;
+            }
+        }
+    }
+
+    &-text {
+        margin:40px 0;
+
+        font-size:18px;
+        line-height:130%;
+    }
+
+    &-code {
+        display:inline-block;
+        margin:20px 0;
+        padding:30px 70px 30px 50px;
+
+        color:#777;
+        background:#fafafa;
+        border-radius:15px;
+
+        code, pre {
+            font-size:18px;
+            line-height:130%;
+            word-wrap:break-word;
+            white-space:pre-wrap;
+        }
+    }
+}
